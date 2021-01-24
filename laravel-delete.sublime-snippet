@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[public function ${1:delete}(Request \$request, ${2:Model} \$model)
+{
+    \$request->validate([
+        'id' => 'required|integer',
+    ]);
+
+    \$row = \$model->find(\$request->input('id'));
+    abort_unless(\$row, 406, '数据不存在');
+    abort_unless(\$row->delete(), 406, '删除失败');
+
+    ${3:operation_log('delete', $4);}
+    return \$this->message('删除成功');
+}
+
+$0
+]]></content>
+	<tabTrigger>ldel</tabTrigger>
+	<scope>source.php - string - comment</scope>
+	<description>laravel delete action...</description>
+</snippet>
