@@ -1,9 +1,22 @@
 <snippet>
-	<content><![CDATA[
-Hello, ${1:this} is a ${2:snippet}.
+	<content><![CDATA[public function ${1:edit}(Request \$request, ${2:Model} \$model)
+{
+    \$params = \$request->validate([
+        'id' => 'required|integer',
+    ]);
+
+    \$row = \$model->find(\$request->input('id'));
+    abort_unless(\$row, 406, '数据不存在');
+    \$row->fill(\$params);
+    abort_unless(\$row->save(), 406, '修改失败');
+
+    ${3:operation_log('edit', $4);}
+    return \$this->message('修改成功');
+}
+
+$0
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<!-- <tabTrigger>hello</tabTrigger> -->
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<tabTrigger>ledit</tabTrigger>
+	<scope>source.php - string - comment</scope>
+	<description>modify action of laravel...</description>
 </snippet>
