@@ -17,5 +17,5 @@ $0
 ]]></content>
 	<tabTrigger>ldel</tabTrigger>
 	<scope>source.php - string - comment</scope>
-	<description>laravel delete action...</description>
+	<description>delete action of laravel...</description>
 </snippet>
