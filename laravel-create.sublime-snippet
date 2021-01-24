@@ -1,20 +1,20 @@
 <snippet>
-	<content><![CDATA[public function ${1:edit}(Request \$request, ${2:Model} \$model)
+	<content><![CDATA[public function ${1:create}(Request \$request, ${2:Model} \$model)
 {
     \$params = \$request->validate([
         'id' => 'required|integer',
     ]);
 
-    \$row = $model->where('rank_id', $request->input('rank_id'))->first();
+    \$row = $model->where('rank_id', \$request->input('rank_id'))->first();
     if (\$row) {
         \$ret = \$row->fill($params)->save();
     } else {
-        \$ret = \$model->create($params);
+        \$ret = \$model->create(\$params);
     }
 
-    abort_unless($ret, 406, trans('message.fail'));
-    operation_log($row ? 'edit' : 'add', sprintf('%s的%s', '客服', '绩效比例'));
-    return $this->message(trans('message.success'));
+    abort_unless(\$ret, 406, trans('message.fail'));
+    operation_log(\$row ? 'edit' : 'add', sprintf('%s的%s', '客服', '绩效比例'));
+    return \$this->message(trans('message.success'));
 
     ${3:operation_log('edit', $4);}
     return \$this->message('修改成功');
