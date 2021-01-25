@@ -1,5 +1,6 @@
 <snippet>
-	<content><![CDATA[public function ${1:create}(Request \$request, ${2:Model} \$model)
+	<content><![CDATA[
+public function ${1:create}(Request \$request, ${2:Model} \$model)
 {
     \$params = \$request->validate([
         'id' => 'required|integer',
@@ -12,12 +13,10 @@
         \$ret = \$model->create(\$params);
     }
 
-    abort_unless(\$ret, 406, trans('message.fail'));
-    operation_log(\$row ? 'edit' : 'add', sprintf('%s的%s', '客服', '绩效比例'));
-    return \$this->message(trans('message.success'));
+    abort_unless(\$ret, 406, '操作失败');
+    ${3:operation_log(\$row ? 'edit' : 'add', $4);}
 
-    ${3:operation_log('edit', $4);}
-    return \$this->message('修改成功');
+    return \$this->message('操作成功');
 }
 
 $0
