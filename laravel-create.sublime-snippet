@@ -6,7 +6,7 @@ public function ${1:create}(Request \$request, ${2:Model} \$model)
         'id' => 'required|integer',
     ]);
 
-    \$row = $model->where('rank_id', \$request->input('rank_id'))->first();
+    \$row = \$model->where('rank_id', \$request->input('rank_id'))->first();
     if (\$row) {
         \$ret = \$row->fill($params)->save();
     } else {
