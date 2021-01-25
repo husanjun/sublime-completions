@@ -9,7 +9,7 @@
     abort_unless(\$row, 406, '数据不存在');
     abort_unless(\$row->delete(), 406, '删除失败');
 
-    ${3/.+/operation_log\('delete', '/}${3:message}${3/.+/'\);/}
+    ${3:operation_log('delete', $4);}
     return \$this->message('删除成功');
 }
 
