@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+if (!Schema::hasTable('${1:table}')) {
+    Schema::create('${1:table}', function (Blueprint \$table) {
+        \$table->increments('id');
+        $0
+    });
+
+    DB::statement("ALTER TABLE `${1:table}` comment '${2:comment}'");
+}
+]]></content>
+	<tabTrigger>ltable</tabTrigger>
+	<scope>source.php - string - comment</scope>
+	<description>create table of laravel...</description>
+</snippet>
