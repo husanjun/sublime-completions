@@ -1,5 +1,6 @@
 <snippet>
-	<content><![CDATA[public function ${1:delete}(Request \$request, ${2:Model} \$model)
+	<content><![CDATA[
+public function ${1:delete}(Request \$request, ${2:Model} \$model)
 {
     \$request->validate([
         'id' => 'required|integer',
