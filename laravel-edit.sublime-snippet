@@ -1,5 +1,6 @@
 <snippet>
-	<content><![CDATA[public function ${1:edit}(Request \$request, ${2:Model} \$model)
+	<content><![CDATA[
+public function ${1:edit}(Request \$request, ${2:Model} \$model)
 {
     \$params = \$request->validate([
         'id' => 'required|integer',
