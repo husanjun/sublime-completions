@@ -1,9 +1,18 @@
 <snippet>
 	<content><![CDATA[
-Hello, ${1:this} is a ${2:snippet}.
+public function ${1:list}(Request \$request, ${2:Model} \$model)
+{
+    ${3:\$request->validate([
+        ${4:'pagesize' => 'nullable|integer',}
+    ]);}
+
+    \$data = \$model->${5:paginate}(${6:\$request->input('pagesize', 10)});
+    return \$this->success(\$data);
+}
+
+$0
 ]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<!-- <tabTrigger>hello</tabTrigger> -->
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
+	<tabTrigger>llist</tabTrigger>
+	<scope>source.php - string - comment</scope>
+	<description>list action of laravel...</description>
 </snippet>
