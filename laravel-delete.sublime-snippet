@@ -6,9 +6,8 @@ public function ${1:delete}(Request \$request, ${2:Model} \$model)
         'id' => 'required|integer',
     ]);
 
-    \$row = \$model->find(\$request->input('id'));
-    abort_unless(\$row, 406, '数据不存在');
-    abort_unless(\$row->delete(), 406, '删除失败');
+    \$ret = \$model->destroy(\$request->input('id'));
+    abort_unless(\$ret, 406, '删除失败');
 
     ${3:operation_log('delete', $4);}
     return \$this->message('删除成功');
