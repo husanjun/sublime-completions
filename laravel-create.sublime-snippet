@@ -2,16 +2,11 @@
 	<content><![CDATA[
 public function ${1:create}(Request \$request, ${2:Model} \$model)
 {
-    \$params = \$request->validate([
-        'id' => 'required|integer',
+    \$request->validate([
+
     ]);
 
-    \$row = \$model->where('rank_id', \$request->input('rank_id'))->first();
-    if (\$row) {
-        \$ret = \$row->fill($params)->save();
-    } else {
-        \$ret = \$model->create(\$params);
-    }
+    \$ret = \$model->create(\$params);
 
     abort_unless(\$ret, 406, '操作失败');
     ${3:operation_log(\$row ? 'edit' : 'add', $4);}
