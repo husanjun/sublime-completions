@@ -6,12 +6,10 @@ public function ${1:create}(Request \$request, ${2:Model} \$model)
 
     ]);
 
-    \$ret = \$model->create(\$params);
+    abort_unless(\$model->create(\$params), 406, '新增失败');
+    ${3:operation_log('add', $4);}
 
-    abort_unless(\$ret, 406, '操作失败');
-    ${3:operation_log(\$row ? 'edit' : 'add', $4);}
-
-    return \$this->message('操作成功');
+    return \$this->message('新增成功');
 }
 
 $0
