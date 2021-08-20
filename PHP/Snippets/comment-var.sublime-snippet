@@ -2,5 +2,5 @@
 	<content><![CDATA[/** @var $0 */]]></content>
 	<tabTrigger>@var</tabTrigger>
 	<scope>source.php - string - comment</scope>
-	<description>/** @var */...</description>
+	<description>/** @var */ …</description>
 </snippet>
