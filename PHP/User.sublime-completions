@@ -1,0 +1,35 @@
+{
+    "scope": "source.php - string - comment - variable.other.php - meta.embedded.html",
+    "completions": [
+        {
+            "trigger": "protected",
+            "contents": "protected",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "private",
+            "contents": "private",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "public",
+            "contents": "public",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "extends",
+            "contents": "extends",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "implements",
+            "contents": "implements",
+            "kind": "keyword"
+        },
+        {
+            "trigger": "instanceof",
+            "contents": "instanceof",
+            "kind": "keyword"
+        }
+    ]
+}
