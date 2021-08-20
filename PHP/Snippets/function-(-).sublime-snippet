@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[function (${1:\$value}) ${2:use (${3:\$value})} {
+	<content><![CDATA[function (${1:\$${2:value}})${3: use (\$${4:value})} {
 	${0:// code...}
 }]]></content>
 	<tabTrigger>f</tabTrigger>
