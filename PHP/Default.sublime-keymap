@@ -10,7 +10,7 @@
         //                  | )
         "keys": ["enter"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/wrap-newlines.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/wrap-newlines.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.auto_indent", "operator": "equal", "operand": true },
@@ -35,7 +35,7 @@
         //
         "keys": ["enter"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/wrap-newlines.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/wrap-newlines.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.auto_indent", "operator": "equal", "operand": true },
@@ -63,7 +63,7 @@
     {
         "keys": ["tab"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/auto-array-equals-gt.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/auto-array-equals-gt.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.auto_indent", "operator": "equal", "operand": true },
@@ -77,7 +77,7 @@
     {
         "keys": ["tab"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/auto-array-equals-gt.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/auto-array-equals-gt.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "setting.auto_indent", "operator": "equal", "operand": true },
@@ -102,7 +102,7 @@
         //
         "keys": ["ctrl+enter"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/append-comma-newline.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/append-comma-newline.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "selector", "operator": "equal", "operand": "source.php meta.array string.quoted", "match_all": true },
@@ -118,7 +118,7 @@
     {
         "keys": ["ctrl+;"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/append-semicolon.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/append-semicolon.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "selector", "operator": "equal", "operand": "source.php", "match_all": true },
@@ -129,7 +129,7 @@
     {
         "keys": ["ctrl+enter"],
         "command": "run_macro_file",
-        "args": {"file": "res://Packages/PHP/macros/append-semicolon-newline.sublime-macro"},
+        "args": {"file": "${packages}/SublimeCompletions/PHP/macros/append-semicolon-newline.sublime-macro"},
         "context": [
             { "key": "setting.command_mode", "operand": false },
             { "key": "selector", "operator": "equal", "operand": "source.php - meta.array string.quoted", "match_all": true },
