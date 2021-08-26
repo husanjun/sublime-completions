@@ -11,7 +11,11 @@
         {
             "trigger": "parent",
             "contents": "parent",
-            "kind": "type",
+            "kind": [
+                "type",
+                "k",
+                "keyword"
+            ],
             "details": "The value must be an instanceof the parent of the class in which the type declaration is used. Can only be used in classes."
         },
         {
