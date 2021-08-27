@@ -84,20 +84,20 @@
             "contents": "public",
             "kind": "keyword"
         },
-        {
-            "trigger": "extends",
-            "contents": "extends",
-            "kind": "keyword"
-        },
-        {
-            "trigger": "implements",
-            "contents": "implements",
-            "kind": "keyword"
-        },
-        {
-            "trigger": "instanceof",
-            "contents": "instanceof",
-            "kind": "keyword"
-        }
+        // {
+        //     "trigger": "extends",
+        //     "contents": "extends",
+        //     "kind": "keyword"
+        // },
+        // {
+        //     "trigger": "implements",
+        //     "contents": "implements",
+        //     "kind": "keyword"
+        // },
+        // {
+        //     "trigger": "instanceof",
+        //     "contents": "instanceof",
+        //     "kind": "keyword"
+        // }
     ]
 }
