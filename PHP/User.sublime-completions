@@ -69,21 +69,21 @@
         //     "details": "The value can be any value."
         // },
         //Function
-        {
-            "trigger": "protected",
-            "contents": "protected",
-            "kind": "keyword"
-        },
-        {
-            "trigger": "private",
-            "contents": "private",
-            "kind": "keyword"
-        },
-        {
-            "trigger": "public",
-            "contents": "public",
-            "kind": "keyword"
-        },
+        // {
+        //     "trigger": "protected",
+        //     "contents": "protected",
+        //     "kind": "keyword"
+        // },
+        // {
+        //     "trigger": "private",
+        //     "contents": "private",
+        //     "kind": "keyword"
+        // },
+        // {
+        //     "trigger": "public",
+        //     "contents": "public",
+        //     "kind": "keyword"
+        // },
         // {
         //     "trigger": "extends",
         //     "contents": "extends",
