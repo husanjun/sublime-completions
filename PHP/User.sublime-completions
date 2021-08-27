@@ -2,76 +2,72 @@
     "scope": "source.php - string - comment - variable.other.php - meta.embedded.html",
     "completions": [
         // Type
-        {
-            "trigger": "self",
-            "contents": "self",
-            "kind": "type",
-            "details": "The value must be an instanceof the same class as the one in which the type declaration is used. Can only be used in classes."
-        },
-        {
-            "trigger": "parent",
-            "contents": "parent",
-            "kind": [
-                "type",
-                "k",
-                "keyword"
-            ],
-            "details": "The value must be an instanceof the parent of the class in which the type declaration is used. Can only be used in classes."
-        },
-        {
-            "trigger": "array",
-            "contents": "array",
-            "kind": "type",
-            "details": "The value must be an array."
-        },
-        {
-            "trigger": "callable",
-            "contents": "callable",
-            "kind": "type",
-            "details": "The value must be a valid callable. Cannot be used as a class property type declaration."
-        },
-        {
-            "trigger": "bool",
-            "contents": "bool",
-            "kind": "type",
-            "details": "The value must be a boolean value."
-        },
-        {
-            "trigger": "float",
-            "contents": "float",
-            "kind": "type",
-            "details": "The value must be a floating point number."
-        },
-        {
-            "trigger": "int",
-            "contents": "int",
-            "kind": "type",
-            "details": "The value must be an integer."
-        },
-        {
-            "trigger": "string",
-            "contents": "string",
-            "kind": "type",
-            "details": "The value must be a string."
-        },
-        {
-            "trigger": "iterable",
-            "contents": "iterable",
-            "kind": "type",
-            "details": "The value must be either an array or an instanceof Traversable."
-        },
-        {
-            "trigger": "object",
-            "contents": "object",
-            "kind": "type",
-            "details": "The value must be an object."
-        },
-        {
-            "trigger": "mixed",
-            "contents": "mixed",
-            "kind": "type",
-            "details": "The value can be any value."
-        },
+        // {
+        //     "trigger": "self",
+        //     "contents": "self",
+        //     "kind": "type",
+        //     "details": "The value must be an instanceof the same class as the one in which the type declaration is used. Can only be used in classes."
+        // },
+        // {
+        //     "trigger": "parent",
+        //     "contents": "parent",
+        //     "kind": "type",
+        //     "details": "The value must be an instanceof the parent of the class in which the type declaration is used. Can only be used in classes."
+        // },
+        // {
+        //     "trigger": "array",
+        //     "contents": "array",
+        //     "kind": "type",
+        //     "details": "The value must be an array."
+        // },
+        // {
+        //     "trigger": "callable",
+        //     "contents": "callable",
+        //     "kind": "type",
+        //     "details": "The value must be a valid callable. Cannot be used as a class property type declaration."
+        // },
+        // {
+        //     "trigger": "bool",
+        //     "contents": "bool",
+        //     "kind": "type",
+        //     "details": "The value must be a boolean value."
+        // },
+        // {
+        //     "trigger": "float",
+        //     "contents": "float",
+        //     "kind": "type",
+        //     "details": "The value must be a floating point number."
+        // },
+        // {
+        //     "trigger": "int",
+        //     "contents": "int",
+        //     "kind": "type",
+        //     "details": "The value must be an integer."
+        // },
+        // {
+        //     "trigger": "string",
+        //     "contents": "string",
+        //     "kind": "type",
+        //     "details": "The value must be a string."
+        // },
+        // {
+        //     "trigger": "iterable",
+        //     "contents": "iterable",
+        //     "kind": "type",
+        //     "details": "The value must be either an array or an instanceof Traversable."
+        // },
+        // {
+        //     "trigger": "object",
+        //     "contents": "object",
+        //     "kind": "type",
+        //     "details": "The value must be an object."
+        // },
+        // {
+        //     "trigger": "mixed",
+        //     "contents": "mixed",
+        //     "kind": "type",
+        //     "details": "The value can be any value."
+        // },
         //Function
         {
             "trigger": "protected",
