@@ -13,7 +13,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/wrap-newlines.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/wrap-newlines.sublime-macro"
         },
         "context": [
             {
@@ -58,7 +58,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/wrap-newlines.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/wrap-newlines.sublime-macro"
         },
         "context": [
             {
@@ -116,7 +116,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/auto-array-equals-gt.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/auto-array-equals-gt.sublime-macro"
         },
         "context": [
             {
@@ -165,7 +165,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/auto-array-equals-gt.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/auto-array-equals-gt.sublime-macro"
         },
         "context": [
             {
@@ -239,7 +239,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/append-comma-newline.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/append-comma-newline.sublime-macro"
         },
         "context": [
             {
@@ -275,7 +275,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/append-semicolon.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/append-semicolon.sublime-macro"
         },
         "context": [
             {
@@ -308,7 +308,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/append-semicolon-newline.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/append-semicolon-newline.sublime-macro"
         },
         "context": [
             {
@@ -470,7 +470,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/auto-pair-braces-current-line.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/auto-pair-braces-current-line.sublime-macro"
         },
         "context": [
             {
@@ -510,7 +510,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/auto-pair-braces-current-line.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/auto-pair-braces-current-line.sublime-macro"
         },
         "context": [
             {
@@ -550,7 +550,7 @@
         ],
         "command": "run_macro_file",
         "args": {
-            "file": "res://Packages/SublimeCompletions/PHP/macros/auto-pair-braces-next-line.sublime-macro"
+            "file": "res://Packages/ST-Completions/PHP/macros/auto-pair-braces-next-line.sublime-macro"
         },
         "context": [
             {
