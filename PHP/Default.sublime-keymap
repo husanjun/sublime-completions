@@ -725,5 +725,45 @@
                 "match_all": true
             }
         ]
-    }
+    },
+    {
+        "keys": [
+            "*"
+        ],
+        "command": "insert_snippet",
+        "args": {
+            "contents": "*$0*/"
+        },
+        "context": [
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "source.php",
+                "match_all": true
+            },
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "completionProvider.resolveProvider"
+            },
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": true,
+                "match_all": true
+            },
+            {
+                "key": "preceding_text",
+                "operator": "regex_contains",
+                "operand": "^\\s*\/$",
+                "match_all": true
+            },
+            {
+                "key": "following_text",
+                "operator": "regex_contains",
+                "operand": "^\\s*$",
+                "match_all": true
+            }
+        ]
+    },
 ]
